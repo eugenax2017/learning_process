@@ -1,4 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 class Main2 {
     public void swapEl(int[] arr, int i1, int i2) {
@@ -27,7 +30,13 @@ public class Main {
         int[] arr2 = new int[]{5,6,7,8};
         Main2 mainObj = new Main2();
         mainObj.mySort(arr2);
-        System.out.println(Arrays.toString(arr2));
+        Arrays.sort(arr);
+        //List<int[]> arrL = Arrays.asList(arr);
+        List<String> arrL = new ArrayList<>();
+        String[] names = {"Buenos Aires", "Córdoba", "La Plata"};
+        ArrayList<String> places = new ArrayList<>(Arrays.asList(names));
+        System.out.println(places);
+        System.out.println(Arrays.toString(arr));
     }
 }
 class Main3 extends Main {
