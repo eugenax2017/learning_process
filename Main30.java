@@ -3,6 +3,13 @@
 
 import java.io.IOException;
 
+class MyExeption extends IOException {
+    public String getMessage(String nameErr){
+        System.out.println("Printing from the Exeption "+nameErr);
+        return nameErr;
+    }
+
+}
 public class Main30 {
     public static void main(String[] args) throws IOException {
         Cosa2 Cosa = new Cosa2(3);
